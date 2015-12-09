@@ -1,6 +1,9 @@
 package nagel.frame.category.util;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import org.springframework.util.StringUtils;
 
 /**
  * 项目名称 : nagel
@@ -10,13 +13,24 @@ import java.util.Date;
  */
 public class DateHelper {
     
+    /**
+     * 
+     * 格式化日期为特定格式的字符串
+     * @param style 日期格式
+     * @param data  带格式化日期
+     * @return
+     * 2015年12月9日 by master
+     */
     public static String convertToString(String style,Date data){
         
-        System.out.println("代码");
+        //如果传入的格式或日期为空则返回空串
+        if(StringUtils.isEmpty(style) || null == data){
+            return null;
+        }
         
-        System.out.println("TTTT");
+        SimpleDateFormat fmt = new SimpleDateFormat(style);
         
-        return null;
+        return fmt.format(data);
         
     }
     
