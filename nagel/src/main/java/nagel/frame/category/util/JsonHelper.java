@@ -15,7 +15,7 @@ public class JsonHelper {
     public static JSONObject converJson(String json){
         
         if(StringUtils.isEmpty(json)){
-            
+            return null;
         }
         
         return JSON.parseObject(json);
