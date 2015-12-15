@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="nagel.frame.category.dao.UserDao">
+    <resultMap id="BaseResultMap" type="nagel.frame.category.pojo.User">
+        <id column="ID" property="id" jdbcType="INTEGER" />
+        <result column="LOGIN_NAME" property="loginName" jdbcType="VARCHAR" />
+        <result column="PASS_WORD" property="passWord" jdbcType="VARCHAR" />
+        <result column="CREATE_TIME" property="createTime" jdbcType="VARCHAR" />
+        <result column="LEVEL" property="level" jdbcType="DECIMAL" />
+        <result column="IDCARD" property="idCard" jdbcType="DECIMAL" />
+        <result column="PHONE" property="phone" jdbcType="DECIMAL" />
+    </resultMap>
+    
+    <sql id="Base_Column">
+        ID,LOGIN_NAME,PASS_WORD,CREATE_TIME,LEVEL,IDCARD,PHONE
+    </sql>
+    
+    <select id="findUser" parameterType="map" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column"/> 
+          FROM USER T
+            WHERE T.LOGIN_NAME = #{loginName} AND T.PASS_WORD = #{passWord} 
+    </select>
+    
+    
+</mapper>
