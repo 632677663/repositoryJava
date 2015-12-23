@@ -10,6 +10,7 @@ import nagel.frame.category.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 /**
  * 项目名称 : nagel
  * 创建日期 : 2015年12月16日
@@ -22,6 +23,7 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
     
     @Override
+    @Transactional
     public User findUser(String loginName, String passWord) {
         //传入参数判空
         if(StringUtils.isEmpty(loginName) || StringUtils.isEmpty(passWord)){

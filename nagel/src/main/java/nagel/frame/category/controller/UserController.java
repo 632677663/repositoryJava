@@ -28,7 +28,7 @@ public class UserController {
         
         System.out.println("user:"+findUser.getLoginName());
         
-        return null;
+        return "main";
     }
     
 }

@@ -1,0 +1,200 @@
+@charset "utf-8";
+.pb40{padding-bottom:50px;}
+.mt40{margin-top:40px;}
+.pt20{padding-top:20px;}
+.info_container2{border-top:2px solid #2a7ccf; padding:16px 90px 0 12px; background:#eff3f8; position:relative}
+
+/* ----渠道信息管理---- */
+
+/* 渠道充值 */
+.basic_info{height:38px;line-height:38px;background:#2a7ccf;padding-left:15px;font-size:14px;color:#fff;}
+.recharge_list{margin-bottom:40px;}
+.recharge_list li{height:35px;line-height:35px;margin:20px 0 0 0;}
+.recharge_list label{width:25%;text-align:right;display:inline-block;margin-right:15px;font-size:13px;color:#333;}
+.recharge_list span{font-size:13px;color:#333;}
+.recharge_list input{width:25%;height:32px;line-height:32px;border:1px solid #d5d5d5;font-size:13px;color:#666;padding-left:10px;}
+.recharge_btn{height:80px;background:#f5f5f5;border-top:1px solid #e5e5e5;text-align:center;}
+.recharge_btn input{width:102px;height:42px;border:none;background:#86b97d;font-size:14px;color:#fff;cursor:pointer;margin-top:20px;margin-right:50px;}
+
+/* 渠道基本信息修改 */
+.recharge_list .back_add{width:21%;}
+.recharge_list .back_mess{width:auto;height:auto;vertical-align:middle;}
+.recharge_list .silver_platform{border-radius:0px;-moz-width:calc(21% + 12px);-webkit-width:calc(21% + 12px);width:calc(21% + 12px);height:32px;line-height:32px;border:1px solid #d5d5d5;font-size:13px;color:#666;}
+.station_info{height:48px;line-height:48px;padding-left:15px;background:#eff3f8;font-size:14px;color:#333;border-bottom:1px solid #dddddd;}
+.stations{height:34px;line-height:34px;background:#eff3f8;font-size:13px;color:#333;border-bottom:1px solid #dddddd;padding:6px 0 8px 15px;}
+.station_info span{color:#2a7cce;}
+.station_info em{margin:0 20px 0 10px;display:inline-block;line-height:48px;color:#666;}
+.station{font-size:13px;}
+.station input{vertical-align:middle;}
+.station_tab{border-left:1px solid #dddddd;}
+.station_tab th,.station_tab td{border-bottom:1px solid #dddddd;border-right:1px solid #dddddd;height:35px;color:#333;padding-left:10px;}
+.station_tab th{text-align:left;background:-webkit-gradient(linear, 100% 0, 100% 100%, from(#f7f7f7), to(#ececec));background:-moz-linear-gradient(top, #f7f7f7,#ececec);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#f7f7f7,endColorstr=#ececec,grandientType=0);font-weight:bold;}
+.station_tab tr:nth-child(2n+2){background:-webkit-gradient(linear, 100% 0, 100% 100%, from(#fdfdfd), to(#f0f0f0));background:-moz-linear-gradient(top, #fdfdfd,#f0f0f0);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#fdfdfd,endColorstr=#f0f0f0,grandientType=0);}
+.up_key{height:32px;width:154px;border:1px solid #ccc;background:-webkit-gradient(linear, 100% 0, 100% 100%, from(#fdfdfd), to(#f0f0f0));background:-moz-linear-gradient(top, #fdfdfd,#f0f0f0);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#fdfdfd,endColorstr=#f0f0f0,grandientType=0);margin-left:10px; vertical-align:middle;cursor:pointer;font-size:13px;color:#333;}
+.modify{padding-top:30px;text-align:center;}
+.modify input{width:100px;height:42px;line-height:42px;color:#fff;background:#6db3e2;border:none;cursor:pointer;}
+
+/*表格中带输入框*/
+.input_tab td.inp{padding:1px 4px 1px 2px;}
+.inp input{height:100%;border:1px solid #d5d5d5;color:#333;width:100%;}
+
+/* 查看详情*/
+.stations a{color:#1982c8;}
+.basic_info_list{border-left:1px solid #dbebf7;border-right:1px solid #dbebf7;border-bottom:1px solid #dbebf7;margin-bottom:20px;}
+.basic_info_list li{height:30px;line-height:30px;border-bottom:1px dotted #dcebf8;padding-left:125px;position:relative;}
+.basic_info_list li.s_last{border-bottom:none;}
+.basic_info_list li.s_last label{border-bottom:none;}
+.basic_info_list li label{width:100px;text-align:right;display:inline-block;background:#edf3f4;padding-right:10px;border-bottom:1px solid #f7fbff;color:#2e569f;position:absolute;left:0;top:0;}
+
+/*-----渠道账号管理----*/
+/*渠道详情管理*/
+.query_terms{padding-top:12px;position:relative;background:#eff3f8;}
+.query_terms .btn_search{position:absolute;top:32px;right:12px;}
+.terms{padding-bottom:10px;}
+.terms span{display:inline-block;width:222px;padding-bottom:10px;}
+.terms span.sp_inp{width:auto;color:#666;}
+.terms label{display:inline-block;width:85px !important;min-width:50px;text-align:right;font-size:13px;color:#000;}
+.terms select,.terms input{padding-left:5px;width:125px;height:22px;border:1px solid #ccc;color:#666;}
+.terms select{width:132px;padding:0;}
+.recharge_btn .btn_blue{background:#6db3e2;margin-right:20px;}
+.recharge_list select{-moz-width:calc(25% + 12px);-webkit-width:calc(25% + 12px);width:calc(25% + 12px);height:32px;line-height:32px;border:1px solid #d5d5d5;font-size:13px;color:#666;padding-left:10px;border-radius:0;}
+.recharge_list select.account{-moz-width:calc(12.5% + 6px);-webkit-width:calc(12.5% + 6px);width:calc(12.5% + 6px);}
+.recharge_list select.province{border-right:none;}
+.export_print{height:34px;padding:10px 0;background:#fff;width:100%; }
+.export_print a{text-decoration:none;display:inline-block;width:89px;height:32px;line-height:32px;background:-webkit-gradient(linear, 100% 0, 100% 100%, from(#f7f7f7), to(#ececec));background:-moz-linear-gradient(top, #f7f7f7,#ececec);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#f7f7f7,endColorstr=#ececec,grandientType=0);border:1px solid #ccc;}
+.export_print a.export{margin-right:8px;}
+.export_print a span{font-size:13px;color:#1982c8;}
+.export_print a.export span{background:url(../images/export_icon.png) 4px 1px no-repeat;padding-left:25px;}
+.export_print a.print span{background:url(../images/print_icon.png) 16px 2px no-repeat;padding-left:40px;}
+/*渠道账号管理提示信息*/
+.s_tips{background:url(../images/correct_icon.png) left top no-repeat;display:inline-block;width:16px;height:11px;margin-left:10px;}
+.e_tips{background:url(../images/error_icon.png) left top no-repeat;display:inline-block;margin-left:10px;padding-left:20px;color:#e08374;}
+
+/*资金明细*/
+.info_container .text{color:#666;width:100px;}
+.info_container select{width:130px;}
+
+/*----投注站号管理----*/
+
+/*添加投注站*/
+.recharge_list li.lottery span{display:inline-block;height:auto;}
+.recharge_list li.lottery em{width:85px;display:inline-block;font-size:13px;}
+.recharge_list li.lottery input{margin-right:10px;}
+.tzz_list li{position:relative;}
+.tzz_list li i{position:absolute;top:5px;left:51%;color:#f82a00;font-weight:bold;}
+.tzz_list li i.start_icon{left:37%;}
+.tzz_list li.tzz_code{color:#666;}
+.tzz_list li.tzz_code input{width:11.3%;}
+
+/*----财务管理----*/
+
+/*提现管理*/
+.tiXian_status{margin-bottom:10px;border-bottom:1px solid #c4d0dc;height:43px;padding-left:15px;}
+.tiXian_status li{float:left;border-top:1px solid #fff;}
+.tiXian_status li a{color:#666666;width:76px;height:41px;display:inline-block;line-height:41px;text-align:center;background:#f9f9f9;border-top:1px solid #c4d0dc;border-left:1px solid #c4d0dc;}
+.tiXian_status li:last-child a{border-right:1px solid #c4d0dc;}
+.tiXian_status li.t_over{border-top:1px solid #498ebe;}
+.tiXian_status li.t_over a{background:#fff;border-top:1px solid #498ebe;height:42px;}
+.sel_examine{margin:-4px 8px 0 2px;}
+.btn_examine{width:79px;height:34px;border:none;background:url(../images/shenHe.png) left top no-repeat;float:right;text-indent:-999em;margin:10px 12px;}
+
+/*提现审核弹出框*/
+.popBox2{width:670px !important;left:45% !important;}
+.popBox2 .pop_button{text-align:center;}
+.popBox2 .pop_button a{display:inline-block;float:none !important;margin:0px 20px !important;}
+.popBox2 .pop_content{height:350px;}
+.pop_content p{height:35px;line-height:35px;padding-left:20px;color:#333;font-size:13px;}
+.pop_content p span{color:#e36e56;}
+.pop_content h3{height:35px;line-height:35px;padding-left:20px;color:#333;margin-bottom:12px;}
+.examine_tab{width:98%;margin:0 auto;border-top:1px solid #ddd;border-left:1px solid #ddd;}
+.examine_tab td{border-bottom:1px solid #ddd;border-right:1px solid #ddd;height:35px;padding-left:12px;color:#333;font-size:13px;}
+.examine_tab .remarks td{height:50px;}
+.ex_status{width:99%;border:none;height:99%;}
+
+/*添加虚拟投注站号弹框*/
+.examine_tab .inp{position:relative;}
+.examine_tab .inp input{color:#666;}
+.inp span{position:absolute;top:15px;right:12px;color:#dd5a43;}
+.pop_content h3.rate_h3{padding-left:95px;}
+.pop_list li{margin:0 0 17px 0;}
+.pop_list input{width:45%;}
+.pop_list li.tzz_code input{width:19.5%;}
+.pop_list li i{left:72%;}
+.pop_list li i.start_icon{left:46%;}
+
+/*---彩票交易管理---*/
+
+/*彩票查询*/
+.caiPiao_list label{width:130px;}
+.caiPiao_list li p{margin-left:140px;padding-left:10px;color:#333;}
+.caiPiao span{width:auto;color:#666;}
+.query_terms .cp_btn{top:50px;}
+.terms input.ra_btn{width:auto;margin-top:-2px;margin-right:5px;}
+
+
+/*兑大奖*/
+.cp_print{margin-left:22%;}
+.cp_img{width:508px;height:538px;background:url(../images/caipiao_bg.png) left top repeat;padding-top:22px;}
+.cp_img p{text-align:center;}
+.cp_title{font-size:18px;height:25px;}
+.cp_list{padding-top:20px;height:292px;}
+.cp_list li{padding:5px 0 18px 26px;width:225px;float:left;}
+.cp_code{text-align:center;border-top:1px solid #000;border-bottom:1px solid #000;margin:0 26px;}
+.cp_code span{display:inline-block;padding:5px 5px;}
+.cp_img h3{padding:20px 0 0 26px;}
+.cp_button{width:508px;text-align:center;}
+.cp_button input{margin:30px 66px 0 66px;color:#1982c8;border:none;background:#fff; cursor:pointer;}
+
+/*兑大奖登录框*/
+.cp_login{width:363px;height:232px;border:1px solid #297ccf;position:relative;margin-top:8%;}
+.cp_login span{display:inline-block;width:21px;height:21px;background:url(../images/cp_guanbi.png) left top no-repeat;position:absolute;top:5px;right:5px;}
+.cp_login_list{padding-top:58px;}
+.cp_login_list li{height:34px;line-height:34px;margin-bottom:12px;}
+.cp_login_list li label{width:106px;text-align:right;display:inline-block;}
+.cp_login_list li input{height:32px;border:1px solid #ccc;width:220px;}
+.cp_login_btn{text-align:center;}
+.cp_login_btn input{width:85px;height:28px;margin:15px 60px 0 0;background:#6db3e2;color:#fff;border:none;}
+.cp_login_btn input.reset{margin-left:60px;margin-right:0px;}
+
+/*兑大奖通知*/
+.notice{position:fixed;right:25px;bottom:95px;width:262px;height:167px;border:1px solid #e5e3e4;background:#f7f7f7;}
+.notice h2{height:30px;line-height:30px;padding-left:8px;border-bottom:1px solid #e5e3e4;}
+.notice h2 span{width:21px;height:21px;display:inline-block;float:right;background:url(../images/cp_guanbi_black.png) left top no-repeat;margin-right:3px;margin-top:3px;}
+.notice p{text-align:center;margin-top:28px;line-height:30px;}
+.notice p span{font-size:18px;color:#fc3939;}
+
+/*彩民管理*/
+.more_bank span{color:#fc3939;}
+.more_bank i{margin-left:25px;color:#1982C8; cursor:pointer;}
+
+/*财务报表*/
+.info_container .s_radio{display:inline-block;margin-right:25px;}
+
+/*登录*/
+.login_list{margin-bottom:40px;padding-right:150px;padding-top:50px;padding-bottom:50px;}
+.login_list li{height:35px;line-height:35px;margin:20px 0 0 0;text-align:left;padding-left:25%;}
+.login_list label{width:15%;text-align:right;display:inline-block;margin-right:15px;font-size:13px;color:#333;}
+.login_list span{font-size:13px;color:#333;}
+.login_list input{width:360px;height:32px;line-height:32px;border:1px solid #d5d5d5;font-size:13px;color:#666;padding-left:10px;}
+.login_list li img{vertical-align:middle;height:34px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

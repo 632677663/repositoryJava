@@ -1,0 +1,8 @@
+/*tablesorter plug css*/
+table.tablesorter .sort{cursor:pointer;}
+table.tablesorter .sort:after{cursor:pointer;content:""; background:url(../images/sort.png) no-repeat; float:right; width:9px; height:11px; margin:5px 7px 0 0}
+table.tablesorter th.headerSortUp:after{background-image:url(../images/desc.png)}
+table.tablesorter th.headerSortDown:after{background-image:url(../images/asc.png)}
+table.tablesorter th.headerSortUp{background:-webkit-gradient(linear, 100% 0, 100% 100%, from(#eff3f8), to(#e3e7ed));background:-moz-linear-gradient(top, #eff3f8,#e3e7ed);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#eff3f8,endColorstr=#e3e7ed ,grandientType=0); color:#307ecc}
+table.tablesorter th.headerSortDown{background:-webkit-gradient(linear, 100% 0, 100% 100%, from(#eff3f8), to(#e3e7ed));background:-moz-linear-gradient(top, #eff3f8,#e3e7ed);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#eff3f8,endColorstr=#e3e7ed ,grandientType=0); color:#307ecc}
+table.tablesorter th{background: url(../images/bg_th.png) repeat-x;}
