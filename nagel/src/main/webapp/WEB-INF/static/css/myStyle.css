@@ -1,0 +1,9 @@
+.fdb{  
+   position: absolute;  
+   float:none;
+   border-bottom:none;
+   border-top:150em;
+   margin: 0em;
+   height: 15px;
+   text-align:center;  
+}  

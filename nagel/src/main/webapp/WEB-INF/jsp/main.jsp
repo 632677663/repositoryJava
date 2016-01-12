@@ -13,49 +13,44 @@
 	<%@ include file="common/head.jsp" %>
 </div>
 <!--head end-->
-<div class="sidebar-nav">
-        <a href="#dashboard-menu" class="nav-header" data-toggle="collapse"><i class="icon-dashboard"></i>Dashboard</a>
-        <ul id="dashboard-menu" class="nav nav-list collapse in">
-            <li><a href="index.html">Home</a></li>
-            <li ><a href="users.html">Sample List</a></li>
-            <li ><a href="user.html">Sample Item</a></li>
-            <li ><a href="media.html">Media</a></li>
-            <li ><a href="calendar.html">Calendar</a></li>
-            
-        </ul>
-
-        <a href="#accounts-menu" class="nav-header" data-toggle="collapse"><i class="icon-briefcase"></i>Account<span class="label label-info">+3</span></a>
-        <ul id="accounts-menu" class="nav nav-list collapse">
-            <li ><a href="sign-in.html">Sign In</a></li>
-            <li ><a href="sign-up.html">Sign Up</a></li>
-            <li ><a href="reset-password.html">Reset Password</a></li>
-        </ul>
-
-        <a href="#error-menu" class="nav-header collapsed" data-toggle="collapse"><i class="icon-exclamation-sign"></i>Error Pages <i class="icon-chevron-up"></i></a>
-        <ul id="error-menu" class="nav nav-list collapse">
-            <li ><a href="403.html">403 page</a></li>
-            <li ><a href="404.html">404 page</a></li>
-            <li ><a href="500.html">500 page</a></li>
-            <li ><a href="503.html">503 page</a></li>
-        </ul>
-
-        <a href="#legal-menu" class="nav-header" data-toggle="collapse"><i class="icon-legal"></i>Legal</a>
-        <ul id="legal-menu" class="nav nav-list collapse">
-            <li ><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li ><a href="terms-and-conditions.html">Terms and Conditions</a></li>
-        </ul>
-
-        <a href="help.html" class="nav-header" ><i class="icon-question-sign"></i>Help</a>
-        <a href="faq.html" class="nav-header" ><i class="icon-comment"></i>Faq</a>
-    </div>
+<!-- menu -->
+    <%@ include file="common/menu.jsp" %>
+<!-- menu end -->
 <!--container-->
-<div id="container">
-    <!--main-->
+<div class="content">
+<div class="row-fluid">
+    <div class="block">
+        <a href="#page-stats" class="block-heading" data-toggle="collapse">房态</a>
+        <div id="page-stats" class="block-body collapse in">
+
+            <div class="stat-widget-container">
+                <div class="stat-widget">
+                    <div class="stat-button">
+                        <p class="title">房间总数</p>
+                        <p class="detail">Accounts</p>
+                    </div>
+                </div>
+
+                <div class="stat-widget">
+                    <div class="stat-button">
+                        <p class="title">已出租数</p>
+                        <p class="detail">Subscribers</p>
+                    </div>
+                </div>
+
+                <div class="stat-widget">
+                    <div class="stat-button">
+                        <p class="title">剩余房间数</p>
+                        <p class="detail">Pending</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--main-->
 </div>
 <!--container-->
-<footer>
     <%@ include file="common/foot.jsp" %>
-</footer>
-    
 </body>
 </html>

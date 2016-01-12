@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/theme.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/font-awesome.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/myStyle.css">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
