@@ -6,4 +6,38 @@
    margin: 0em;
    height: 15px;
    text-align:center;  
-}  
+}
+
+/**导航状态隐藏**/
+#pageId{display:none}  
+
+
+/*******************自定义table样式************************/
+.formTable{
+	margin: auto;
+}
+
+.formTable th{
+    background-color:#c3dde0;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+}
+
+.formTable tr{
+    background-color:#d4e3e5;
+}
+
+
+.formTable td{
+	border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+	text-align: right;
+}
+
+.formTable .bottomTable{
+    text-align: center;
+}

@@ -19,5 +19,6 @@
 <!--[if IE 8 ]> <body class="ie ie8 "> <![endif]-->
 <!--[if IE 9 ]> <body class="ie ie9 "> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
-<script src="${pageContext.request.contextPath}/static/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/static/js/jquery-1.8.2.min.js" type="text/javascript"></script>
 <script src="${pageContext.request.contextPath}/static/js/bootstrap.js" ></script>
+<script src="${pageContext.request.contextPath}/static/js/basic.js" ></script>

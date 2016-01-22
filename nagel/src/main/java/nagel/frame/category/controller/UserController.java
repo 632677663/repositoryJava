@@ -2,7 +2,6 @@ package nagel.frame.category.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
-import nagel.frame.category.pojo.User;
 import nagel.frame.category.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,11 +23,10 @@ public class UserController {
     @RequestMapping("/show")
     public String test(HttpServletRequest request,Model model){
         
-        User findUser = userService.findUser("admin", "123456");
+        //User findUser = userService.findUser("admin", "123456");
         
-        System.out.println("user:"+findUser.getLoginName());
+        //System.out.println("user:"+findUser.getLoginName());
         
         return "main";
     }
-    
 }

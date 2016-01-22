@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="nagel.frame.category.dao.RoomDao">
+    <resultMap id="BaseResultMap" type="nagel.frame.category.pojo.Room">
+        <id column="ROOM_ID" property="roomId" jdbcType="VARCHAR" />
+        <result column="PRICE" property="price" jdbcType="NUMERIC" />
+        <result column="STATE" property="state" jdbcType="INTEGER" />
+        <result column="USER_ID" property="userId" jdbcType="VARCHAR" />
+        <result column="USER_NAME" property="userName" jdbcType="VARCHAR" />
+        <result column="CHECK_TIME" property="checkTime" jdbcType="TIMESTAMP" />
+        <result column="LEASE_TIME" property="leaseTime" jdbcType="INTEGER" />
+        <result column="EXPIRE_TIME" property="expireTime" jdbcType="TIMESTAMP" />
+        <result column="DEPOSIT_STATE" property="depositState" jdbcType="INTEGER" />
+        <result column="DEPOSIT" property="deposit" jdbcType="NUMERIC" />
+    </resultMap>
+    
+    <sql id="Base_Column">
+        ROOM_ID,PRICE,STATE,USER_ID,USER_NAME,CHECK_TIME,LEASE_TIME,EXPIRE_TIME,DEPOSIT_STATE,DEPOSIT
+    </sql>
+    
+    <insert id="addRoomInfo" parameterType="nagel.frame.category.pojo.Room">
+        INSERT INTO ROOM (ROOM_ID,PRICE) VALUES (#{roomId},#{price})
+    </insert>
+    
+    <select id="queryRoomList" parameterType="map" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column"/> FROM ROOM T
+            WHERE 1=1
+                <if test="roomId != null and roomId != ''">
+                    AND T.ROOM_ID = #{roomId}
+                </if>
+                <if test="state != null and state != ''">
+                    AND T.STATE = #{state}
+                </if>
+                limit ${(page-1)*pageSize},${page * pageSize}
+    </select>
+    
+    <select id="queryRoomCount" resultType="int">
+       SELECT COUNT(1) FROM ROOM T
+            WHERE 1=1
+                <if test="roomId != null and roomId != ''">
+                    AND T.ROOM_ID = #{roomId}
+                </if>
+                <if test="state != null and state != ''">
+                    AND T.STATE = #{state}
+                </if>
+    </select>
+    
+</mapper>
